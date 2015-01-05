@@ -1,0 +1,24 @@
+{% extends 'ek_site/base.html' %}
+{% block content %}
+    <!-- Jumbotron -->
+      <div class="jumbotron">
+        <div class="container">
+
+           <h1> I am a young, creative mind with a hunger to learn.</h1><br><br>
+           <p style="text-align: left"> I am a student, studying computer science at Binghamton University in Upstate New York, in my junior year. I want to spend my career designing and creating applications that change our every day lives, make them easier, simpler, or more fun. I am currently focusing on my web development skills, specifically using the django framework, but I want to learn as much as I can before I settle on any one path.
+	I am interested in mobile app development, security and cryptography, web development, algorithm design, and many other facets of software engineering. I love to program, right now I am working mainly in Python, C++, Java, PHP, CSS, HTML.
+	<br>Besides programming I am an avid music listener and music maker. I love to play Super Smash Bros. Melee, and I love my dog Milo
+        <br>
+
+            </p>
+
+            <div class="container" style="">
+            <a href="#" class="thumbnail">
+                <img src="{{ STATIC_URL }}images/doge.jpg" alt="Missing">
+            </a>
+                </div>
+        <p class="lead"></p>
+        <a class="btn btn-large btn-success" href="{% url 'contact' %}">Contact me</a>
+        </div>
+      </div>
+{% endblock %}

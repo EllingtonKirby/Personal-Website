@@ -1,0 +1,50 @@
+{% extends 'ek_site/base.html' %}
+{% block content %}
+      <!-- Jumbotron
+      “The programmer, like the poet, works only slightly removed from pure thought-stuff. He builds his castles in the air, from air, creating by exertion of the imagination. Few media of creation are so flexible, so easy to polish and rework, so readily capable of realizing grand conceptual structures...”
+-Fred Brooks, “The Mythical Man Month”-->
+      <div class="jumbotron">
+        <h1>Hi! My name is Ellington Kirby, and this is my website!</h1>
+        <p class="lead"></p>
+        <a class="btn btn-large btn-success" href="{% url 'about' %}">About me</a>
+      </div>
+
+      <hr>
+
+      <!-- Example row of columns -->
+      <div class="row-fluid">
+        <div class="span4">
+          <h2>What am I working on?</h2>
+          <p>Currently I am trying to develop a chrome extension to assist people who are new to the internet. My parents frequently
+          have trouble avoiding faulty links and figuring out how to find the right sites</p>
+          <p><a class="btn" href="https://github.com/EllingtonKirby/Web-Lost">View details &raquo;</a></p>
+        </div>
+        <div class="span4">
+          <h2>What are my other projects?</h2>
+          <p>Check out my github</p>
+          <p><a class="btn" href="https://github.com/EllingtonKirby/">View details &raquo;</a></p>
+       </div>
+        <div class="span4">
+          <h2>What am I studying?</h2>
+          <p>Check out my current classes and studies!</p>
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                My Classes<span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://pages.citebite.com/d4q0a3h3i1ntv">Operating Systems</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://pages.citebite.com/b4e0j3h3t2goi">Design and Analysis of Algorithms</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://pages.citebite.com/j4x0d3d3v3oor">Ethics in Computer Science</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="http://examinedexistence.com/wp-content/uploads/2014/10/tai-chi.jpg">Tai Chi!</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="footer">
+        <p>&copy; Ellington Kirby 2014</p>
+      </div>
+
+{% endblock %}
